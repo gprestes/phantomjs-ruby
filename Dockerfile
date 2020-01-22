@@ -1,8 +1,6 @@
 FROM ruby:2.6.5
 
-MAINTAINER Guilherme Heuser Prestes <guilherme.prestes@gmail.com>
-
-RUN apt-get -qq update && apt-get -qqy install \
+RUN apt-get -qq update && apt-get -qqy install --no-install-recommends \
     build-essential \
     chrpath \
     libssl-dev \
