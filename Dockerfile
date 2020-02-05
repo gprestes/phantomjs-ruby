@@ -1,4 +1,4 @@
-FROM ruby:2.6.5
+FROM ruby:2.7.0
 
 RUN apt-get -qq update && apt-get -qqy install --no-install-recommends \
     build-essential=12.6 \
