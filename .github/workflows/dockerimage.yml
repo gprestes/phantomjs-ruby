@@ -6,13 +6,13 @@ jobs:
   lint:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v4.0.0
       - name: Run hadolint
         run: make lint
   build:
     needs: lint
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v4.0.0
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag phantomjs-ruby:$(date +%s)
