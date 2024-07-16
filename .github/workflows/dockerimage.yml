@@ -4,14 +4,14 @@ on: [push]
 
 jobs:
   lint:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4.1.7
       - name: Run hadolint
         run: make lint
   build:
     needs: lint
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4.1.7
       - name: Build the Docker image
