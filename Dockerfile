@@ -1,6 +1,5 @@
 FROM ruby:3.2.2
 
-# hadolint ignore=DL3008
 RUN apt-get -qq update && apt-get -qqy install --no-install-recommends \
     build-essential=12.9 \
     chrpath=0.16-2+b1 \    
