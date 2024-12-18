@@ -1,4 +1,4 @@
-FROM ruby:3.3.4
+FROM ruby:3.3.6
 
 RUN apt-get -qq update && apt-get -qqy install --no-install-recommends \
     build-essential=12.9 \
