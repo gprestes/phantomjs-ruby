@@ -6,6 +6,9 @@
       "schedule:daily"
     ]
   },
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "separateMinorPatch": true,
   "extends": [
     "config:recommended"
   ]
