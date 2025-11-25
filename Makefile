@@ -1,6 +1,6 @@
 SHELL := /bin/bash -eu
 
-HADOLINT_VERSION      := 2.12.0
+HADOLINT_VERSION      := 2.14.0
 HARDWARE_NAME         := $(shell uname -m)
 SYSTEM_NAME           := $(shell uname -s | tr A-Z a-z)
 
